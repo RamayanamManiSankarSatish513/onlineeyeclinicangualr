@@ -1,0 +1,75 @@
+<!-- Doctor Page Component -->
+
+
+<!-- Doctor Details -->
+<body>
+    <div class="container ">
+        <div class="col-sm-12">
+            <div>
+                <h1 style="text-align: left;padding-top: 30px;font-size: 35px;"> Doctor Details</h1>
+
+                <div style=" padding-top: 20px;">
+                    <div>
+                        <label> <strong> Doctor Id: </strong></label> {{doctor.doctorId}}
+                    </div>
+                    <div>
+                        <label> <strong> Doctor Name: </strong></label> {{doctor.name}}
+                    </div>
+                    <div>
+                        <label> <strong> Consultation Time: </strong></label> {{doctor.consultationTime}}
+                    </div>
+                    <div>
+                        <label> <strong> Email: </strong></label> {{doctor.email}}
+                    </div>
+                    <div>
+                        <label> <strong> Mobile: </strong></label> {{doctor.mobile}}
+                    </div>
+                    <div>
+                        <label> <strong> Username: </strong></label> {{doctor.userName}}
+                    </div>
+                    <div>
+                        <label> <strong> password: </strong></label> {{doctor.password}}
+                    </div>
+                    <div>
+                        <label> <strong> Address: </strong></label> {{doctor.address}}
+                    </div>
+                    <button (click)="updateDoctor(doctor.doctorId)" class="btn btn-info">Update</button>
+                    <button (click)="showAppointment()" style="margin-left: 5px;" class="btn btn-info">View Appointments</button>
+                    <button (click)="hideAppointment()" style="margin-left: 5px;" class="btn btn-info">Hide Appointments</button>
+                    <button routerLink="../../home" style="margin-left: 5px;" class="btn btn-danger">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Appointment List For Doctor -->
+        <div class="row " style="margin-top: 40px;">
+            <div class="col-md-12" id="alist">
+                <h1 style="text-align: center; margin-top: 20px;"> Appointment List</h1>
+                <table style="text-align: center;" class="table table-striped">
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                            <th id="id"> Id</th>
+                            <th id="pId"> Patient Id </th>
+                            <th id="date"> Date</th>
+                            <th id="time"> Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let appointment of appointments">
+                            <td> {{ appointment.id }} </td>
+                            <td> {{ appointment.patientId }} </td>
+                            <td> {{ appointment.appointmentDate | date:fulldate }} </td>
+                            <td> {{ appointment.appointmentTime }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+
+
+
+
+

@@ -1,0 +1,35 @@
+<!-- Patient Details Component -->
+
+<div class="container col-md-6 offset-md-3">
+    <h3 class="jumbotron"> Patient Details</h3>
+    <div>
+        <div>
+            <label> <strong> Patient Id: </strong></label> {{patient.patientId}}
+        </div>
+        <div>
+            <label> <strong> Patient Name: </strong></label> {{patient.name}}
+        </div>
+        <div>
+            <label> <strong> Age: </strong></label> {{patient.age}}
+        </div>
+        <div>
+            <label> <strong> Email: </strong></label> {{patient.email}}
+        </div>
+        <div>
+            <label> <strong> Mobile: </strong></label> {{patient.mobile}}
+        </div>
+        <div>
+            <label> <strong> Username: </strong></label> {{patient.userName}}
+        </div>
+        <div>
+            <label> <strong> Password: </strong></label> {{patient.password}}
+        </div>
+        <div>
+            <label> <strong> Address: </strong></label> {{patient.address}}
+        </div>
+    </div>
+
+    <button style="margin-left: 10px" class="btn btn-success" (click)="goToPatientList()">Patient List</button>
+    <button style="margin-left: 10px" class="btn btn-info" (click)="updatePatient(patient.patientId)">Update</button>
+    <button style="margin-left: 10px" class="btn btn-danger" (click)="deletePatient(patient.patientId)">Delete</button>
+</div>

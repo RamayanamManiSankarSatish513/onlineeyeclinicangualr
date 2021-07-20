@@ -1,0 +1,36 @@
+<body>
+<div class="container ">
+    <div class="col-sm-12">
+    <div>
+        <h1 style="text-align: left;padding-top: 30px;font-size: 35px;"> Doctor Details</h1>
+        
+    <div style=" padding-top: 20px;">
+        <div>
+            <label> <strong> Doctor Id: </strong></label> {{doctor.doctorId}}
+        </div>
+        <div>
+            <label> <strong> Doctor Name: </strong></label> {{doctor.name}}
+        </div>
+        <div>
+            <label> <strong> Consultation Time: </strong></label> {{doctor.consultationTime}}
+        </div>
+        <div>
+            <label> <strong> Email: </strong></label> {{doctor.email}}
+        </div>
+        <div>
+            <label> <strong> Mobile: </strong></label> {{doctor.mobile}}
+        </div>
+        <div>
+            <label> <strong> Username: </strong></label> {{doctor.userName}}
+        </div>
+        <div>
+            <label> <strong> Address: </strong></label> {{doctor.address}}
+        </div>
+        <button style="text-align:center;" class="btn btn-info" (click)="goToDoctorList()">Go Back</button>
+        <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../admin-service">Admin Page</button>
+        <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../home">LogOut</button>
+    </div>
+    </div>
+</div>
+</div>
+</body>

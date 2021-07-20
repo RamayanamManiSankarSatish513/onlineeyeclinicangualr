@@ -1,0 +1,44 @@
+<!-- Report Details Component -->
+
+<body>
+<div class="container ">
+    <div class="col-sm-9 ">
+    <div >
+        <h1> Report Details
+        <span><button style="margin-left: 60px ;text-align:center;" class="btn btn-info" (click)="goToReportList()">Go Back</button>
+            <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../admin-service">Admin Page</button>
+            <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../home">LogOut</button></span>
+        </h1>
+    <div >
+        <div>
+            <label> <strong> Report Id: </strong></label> {{report.id}}
+        </div>
+        <div>
+            <label> <strong> Paient Id: </strong></label> {{report.patientId}}
+        </div>
+        <div>
+            <label> <strong> Test Id: </strong></label> {{report.testId}}
+        </div>
+        <div>
+            <label> <strong> Date: </strong></label> {{report.reportDate}}
+        </div>
+        <div>
+            <label> <strong> Description: </strong></label> {{report.description}}
+        </div>
+        <div>
+            <label> <strong> Visual Acuity: </strong></label> {{report.visualAcuity}}
+        </div>
+        <div>
+            <label> <strong> Visual Acuity For Near: </strong></label> {{report.visualAcuityForNear}}
+        </div>
+        <div>
+            <label> <strong> Visual Acuity For Distance: </strong></label> {{report.visualAcuityForDistance}}
+        </div>
+        <button style="margin-top: 5px;" class="btn btn-success" onclick="window.print()">Print</button>
+    </div>
+        
+</div>
+   </div>
+
+</div>
+</body>

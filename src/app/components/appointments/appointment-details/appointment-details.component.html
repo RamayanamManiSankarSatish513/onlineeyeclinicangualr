@@ -1,0 +1,33 @@
+<div class="container ">
+    <div class="col-sm-12">
+<div class="jumbotron" style="margin-top: 50px;">
+    <h1 style="text-align: center;"> Appointment Details</h1>
+    <button style="margin-left: 260px ;text-align:center;" class="btn btn-info" (click)="goToAppointmentList()">Go Back</button>
+    <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../admin-service">Admin Page</button>
+    <button style="margin-left: 10px;" class="btn btn-info" routerLink="../../home">LogOut</button>
+    
+    <div style="text-align: center; padding-top: 30px;">
+        <div>
+            <label> <strong> Appointment Id: </strong></label> {{appointment.id}}
+        </div>
+        <div>
+            <label> <strong> Doctor Id: </strong></label> {{appointment.doctorId}}
+        </div>
+        <div>
+            <label> <strong> Patient Id: </strong></label> {{appointment.patientId}}
+        </div>
+        <div>
+            <label> <strong> Date: </strong></label> {{appointment.appointmentDate}}
+        </div>
+        <div>
+            <label> <strong> Time: </strong></label> {{appointment.appointmentTime}}
+        </div>
+        <div>
+            <label> <strong> Consultation Fee: </strong></label> {{appointment.consultationFee}}
+        </div>
+        
+
+    </div>
+</div>
+</div>
+</div>
